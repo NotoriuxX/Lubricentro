@@ -1,0 +1,279 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.custom-navbar-bg {
+    background-color: #333;
+    border-bottom: 5px solid #009966;
+}
+
+.navbar-brand {
+    position: relative; 
+}
+
+.logo-text {
+    color: white;
+    font-size: 24px;
+}
+
+.logo-subtext {
+    color: #009966;
+    font-size: 16px;
+    font-weight: lighter;
+    position: absolute;
+    left: 47%;
+    transform: translateX(-50%);
+    bottom: 18px;
+}
+
+.logo-image {
+    width: auto;
+    height: 1.5em;
+    background: linear-gradient(to bottom, transparent, );
+    border-radius: 4px;
+    position: absolute;
+    left: 43%;
+    transform: translateX(-45%);
+    bottom: -13px;
+}
+.nav-link {
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #009966;
+}
+
+
+/*Cuerpo--------------------------*/
+/* Estilos para la sección Hero */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Toma el 100% del alto de la ventana del navegador */
+    color: #fff;
+    text-align: center;
+    background-color: #333; /* Un color de fondo en caso de que no haya una imagen */
+}
+
+.hero-image-placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/fondo.jpg'); /* Aquí agregas la imagen */
+    background-size: cover; /* Esto hará que la imagen cubra todo el espacio disponible */
+    background-position: center center; /* Esto centrará la imagen */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%); /* Esto centrará verticalmente el contenido */
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #009966;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero-btn:hover {
+    background-color: #007a4d;
+    text-decoration: none;
+    
+}
+/*Seccion Carta ----------------------*/
+.services-section {
+    background-color: #f7f7f7;  /* Color de fondo de la sección */
+}
+
+.card {
+    border: none;  /* Quitamos el borde de las tarjetas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra para darle profundidad */
+    transition: transform 0.3s, box-shadow 0.3s;  /* Transición suave al pasar el mouse */
+}
+
+.card:hover {
+    transform: translateY(-5px);  /* Movimiento hacia arriba al pasar el mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);  /* Sombra más intensa al pasar el mouse */
+}
+
+.card-title {
+    color: #333;  /* Color del título */
+}
+
+.card-text {
+    color: #666;  /* Color del texto */
+}
+.section-title {
+    font-weight: bold;      /* Fuente en negrita */
+    color: #333;           /* Color del texto */
+    position: relative;    /* Posición relativa para permitir elementos absolutos dentro */
+    padding-bottom: 10px;  /* Espacio en la parte inferior */
+    letter-spacing: 1px;   /* Espaciado entre letras */
+    text-transform: uppercase; /* Texto en mayúsculas */
+}
+
+.section-title::after {
+    content: '';   /* Content vacío es necesario para los pseudo-elementos */
+    position: absolute; /* Absoluto relativo al título */
+    bottom: 0;    /* Colocado en la parte inferior del texto del título */
+    left: 50%;    /* Centrado horizontalmente */
+    transform: translateX(-50%); /* Centrado perfecto */
+    width: 50px;  /* Ancho de la línea */
+    height: 3px;  /* Altura de la línea */
+    background-color: #ff4500; /* Color de la línea. Puedes cambiarlo a tu gusto. */
+}
+.custom-navbar-bg {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.3s;
+}
+/*Descripcion --------------*/
+/* Estilos para la sección Descripción */
+.description-section {
+    font-family: 'Arial', sans-serif;
+    padding: 60px 0;
+    background-color: #f9f9f9; /* Color de fondo claro para contraste */
+}
+
+.description-section h2 {
+    color: #333;  /* Color oscuro para el título */
+    font-weight: bold;
+    border-bottom: 3px solid #007bff; /* Línea de color debajo del título para darle énfasis */
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.description-section p {
+    color: #555; /* Color de texto ligeramente oscuro */
+    line-height: 1.6; /* Espaciado entre líneas para mejor lectura */
+    margin-bottom: 20px; /* Espaciado entre párrafos */
+}
+
+.description-section img {
+    border-radius: 5px; /* Esquinas redondeadas para la imagen */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para darle profundidad */
+}
+
+@media (max-width: 992px) {
+    .description-section {
+        text-align: center; /* Centrado de texto en dispositivos medianos y pequeños */
+    }
+    .description-section h2 {
+        margin-top: 20px; /* Espaciado en la parte superior del título cuando la imagen está encima en dispositivos móviles */
+    }
+}
+
+/*maps----------------*/
+
+.contact-section {
+    background-color: #f5f5f5;
+    padding: 40px 0;
+}
+
+.section-title {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.map-container {
+    margin: 20px 0;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+.contact-icons {
+    font-size: 20px;
+}
+
+.icon-row i {
+    color: #007bff;
+    font-size: 24px;
+}
+
+/* ... código anterior ... */
+
+.modern-input {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 10px 20px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.modern-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+.modern-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.modern-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+#contacto {
+    padding-top: 80px; /* Ajusta este valor según la altura de tu barra de navegación */
+    margin-top: -80px; /* Asegúrate de que este valor sea negativo y exactamente igual al padding-top */
+}
+.btn-wsp {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #25D366;  /* Color de fondo verde, que es el color típico de WhatsApp */
+    color: white;  /* Color del texto */
+    border-radius: 5px;  /* Bordes redondeados */
+    text-decoration: none;  /* Quitar subrayado de enlace */
+    transition: background-color 0.3s ease;  /* Efecto de transición al pasar el mouse */
+}
+
+.btn-wsp:hover {
+    background-color: #128C57;  /* Color de fondo más oscuro al pasar el mouse */
+    text-decoration: none; 
+}
+a:hover {
+    text-decoration: none;
+}
+
+#contactodecoracion {
+    display: flex;
+    justify-content: center; /* Esto centra los elementos hijos horizontalmente */
+}
+.contact-icons {
+    font-size: 20px;
+    /* Estas propiedades aseguran que el contenedor no ocupe toda el ancho disponible y se centre correctamente. */
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start; /* Esto alinea los ítems a la izquierda */
+}
